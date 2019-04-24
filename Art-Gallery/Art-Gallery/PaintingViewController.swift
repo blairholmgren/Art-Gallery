@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  PaintingViewController.swift
 //  Art-Gallery
 //
 //  Created by Blair Holmgren on 4/24/19.
@@ -8,13 +8,19 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class PaintingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
+    
 
+   
+    
+    func viewWillAppear() {
+    }
+    
 
 }
-
