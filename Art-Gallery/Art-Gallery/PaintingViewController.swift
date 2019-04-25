@@ -10,15 +10,17 @@ import UIKit
 
 class PaintingViewController: UIViewController {
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         // Do any additional setup after loading the view.
     }
     
     //func viewWillAppear() {} FIXME:
     
-    
+    let paintingController = PaintingController()
     
     @IBOutlet var galleryTableView: UITableView!
     

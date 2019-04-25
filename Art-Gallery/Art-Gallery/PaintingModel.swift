@@ -11,16 +11,25 @@ import UIKit
 class PaintingModel: NSObject, UITableViewDataSource, PaintingTableViewCellDelegate {
     
     func tappedLikeButton(on cell: PaintingTableViewCell) {
-        <#code#>
+        guard let painting = cell.painting else { return }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return 12
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PaintingCell", for: indexPath)
+        
+        guard let paintingCell = cell as? PaintingTableViewCell else { return cell }
+        
+        let painting = paintingController.paintings[indexPath.row]
+        
+        
+        
     }
+    
     
     weak var delegate: UITableView?
     

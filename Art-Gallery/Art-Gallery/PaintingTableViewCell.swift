@@ -10,4 +10,14 @@ import UIKit
 
 class PaintingTableViewCell: UITableViewCell {
     
+    private func updateViews() {
+        guard let painting = painting else { return }
+    }
+    
+    var painting: Painting? {
+        didSet {
+            updateViews()
+        }
+    }
+    
 }
